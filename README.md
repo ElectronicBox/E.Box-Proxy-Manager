@@ -1,2 +1,73 @@
-# E.Box-Proxy-Manager
-**E.Box Proxy Manager** is a lightweight, zero-dependency Windows utility built in raw Win32 C++. It features a modern pastel layout with quick-switch profiles (left-click to load, right-click to save), real-time registry status checks, and global settings broadcasting. High-performance proxy routing with zero bloat.
+# ⚡ E.Box Proxy Manager
+
+A high-performance, lightweight, and native Windows desktop application designed to manage and switch system proxy profiles instantly. Built entirely in raw Win32 C++ with zero external dependencies, offering a blazing-fast startup time and a premium modern pastel design footprint.
+
+---
+
+## ✨ Features
+
+- **⚡ Native Performance:** Written in pure Win32 API. No Electron, no .NET, no heavy runtimes.
+- **🎨 Premium Pastel Blue UI:** Clean interface styled around modern Windows typography (Segoe UI) using native theme anchors.
+- **🔄 Instant Dynamic Switching:** Updates system-wide Internet Explorer/Windows proxy rules and broadcasts the settings change globally immediately. No reboot required.
+- **💾 Quick Profiles:** Supports up to 4 configurable profile slots. Left-click to load, right-click to instantly save your current inputs.
+- **🚨 Active Blinking Alert:** A clean, subtle animated indicator shows when a custom proxy routing configuration is live.
+- **✨ Native Cue Banners:** Implements fast, integrated OS fallback input placeholder configurations[cite: 1].
+
+---
+
+## 📸 Interface Preview
+
+
+┌──────────────────────────────────────────┐
+│  E.Box — Proxy Manager               [-] │
+├──────────────────────────────────────────┤
+│  IP Address: [ 127.0.0.1  ]  Port: [80 ] │
+│                                          │
+│  [ Apply Proxy ]   [ Status ]  [Disable] │
+│                                          │
+│  ▲ Active Proxy:  127.0.0.1 : 80         │
+│                                          │
+│  QUICK PROFILES  [ ? ]                   │
+│  [ P1: 8080 ] [ P2: 9050 ] [ P3 ] [ P4 ] │
+│                                          │
+│  GitHub                Developed by Sam ♥│
+└──────────────────────────────────────────┘
+
+
+---
+
+## 🛠️ Compilation & Setup
+
+The project can be built using any standard C++ compiler with Windows SDK access (Visual Studio, MSVC, MinGW, or Clang)[cite: 1].
+
+### Option 1: Microsoft Visual Studio (Recommended)
+1. Create a new empty Win32 Desktop Application project[cite: 1].
+2. Add `Main.cpp` to your source files[cite: 1].
+3. Ensure the subsystem is configured to **Windows (`/SUBSYSTEM:WINDOWS`)**[cite: 1].
+4. Build and Run (`Release` / `x64`)[cite: 1].
+
+### Option 2: Command Line (MSVC Developer Command Prompt)
+```bash
+cl.exe /O2 /MT /EHsc Main.cpp /link /SUBSYSTEM:WINDOWS
+
+
+🎮 How to Use
+Apply a Proxy: Input your IP address and Port number, then click Apply Proxy[cite: 1].
+
+Quick Slots System:
+
+Type an IP and Port, then Right-Click any profile button (P1–P4) to instantly bind that configuration[cite: 1].
+
+Simply Left-Click any populated profile button to instantly switch paths to that proxy[cite: 1].
+
+Check Status: Click Status to fetch the current live registry keys processing network interactions[cite: 1].
+
+Disable: Click Disable to wipe custom system paths and restore raw direct network connectivity[cite: 1].
+
+📝 License & Contributing
+Contributions, bug reports, and optimizations are welcome! Feel free to open a Pull Request or file an Issue tracker ticket[cite: 1].
+
+Developed with ♥ by Sam[cite: 1]. Find more utilities or follow progress directly on GitHub[cite: 1].
+
+
+

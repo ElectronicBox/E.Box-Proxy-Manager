@@ -15,23 +15,28 @@ A high-performance, lightweight, and native Windows desktop application designed
 
 ---
 
-## 📸 Interface Preview
+## 📸 Interface Preview & Layout
 
+The utility is designed around a compact, lightweight desktop window ($315 \times 265$ pixels) organized cleanly into structured zones:
 
-┌──────────────────────────────────────────┐
-│  E.Box — Proxy Manager               [-] │
-├──────────────────────────────────────────┤
-│  IP Address: [ 127.0.0.1  ]  Port: [80 ] │
-│                                          │
-│  [ Apply Proxy ]   [ Status ]  [Disable] │
-│                                          │
-│  ▲ Active Proxy:  127.0.0.1 : 80         │
-│                                          │
-│  QUICK PROFILES  [ ? ]                   │
-│  [ P1: 8080 ] [ P2: 9050 ] [ P3 ] [ P4 ] │
-│                                          │
-│  GitHub                Developed by Sam ♥│
-└──────────────────────────────────────────┘
+> **Header & Inputs**
+> * **IP Address Input:** Standard field with native placeholder fallback (`127.0.0.1`).
+> * **Port Input:** Numeric-only input field with native placeholder fallback (`8080`).
+
+> **Action Hub**
+> * `[ Apply Proxy ]` — Commits settings to the Windows Registry and broadcasts globally.
+> * `[ Status ]` — Instantly checks live registry values to confirm connection states.
+> * `[ Disable ]` — Wipes custom configurations and falls back to a direct connection.
+
+> **Dynamic Routing Panel**
+> * **▲ Active Proxy State Indicator:** Displays active proxy parameters alongside a real-time animated health signal.
+
+> **Quick Profiles System**
+> * `[ P1 ]` `[ P2 ]` `[ P3 ]` `[ P4 ]`
+> * *Quick Actions:* Left-click to instantly deploy a profile; right-click to overwrite a slot with current inputs.
+
+> **Footer Anchors**
+> * **GitHub Link** (Bottom-Left) | **Developed by Sam ♥** (Bottom-Right)
 
 
 ---
